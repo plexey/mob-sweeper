@@ -61,7 +61,7 @@ class App extends Component {
         <Frame>
           <Edge>{boardContent}</Edge>
         </Frame>
-        {boardStore.gameStatus === "success" && <h2>You didn't die :D</h2>}
+        {boardStore.gameStatus === "success" && <h2>You did not die :D</h2>}
         {boardStore.gameStatus === "fail" && <h2>Rest in pieces</h2>}
         <button onClick={() => boardStore.createBoard()}>Reset</button>
         <Controls>
